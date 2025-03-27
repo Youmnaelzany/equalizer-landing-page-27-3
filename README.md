@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/meet-landing-page-26-3.git)
-- Live Site URL: [Add live site URL here](https://meet-landing-page-26-3.vercel.app/)
+- Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/equalizer-landing-page-27-3.git)
+- Live Site URL: [Add live site URL here](https://equalizer-landing-page-27-3.vercel.app/)
 
 ## My process
 
