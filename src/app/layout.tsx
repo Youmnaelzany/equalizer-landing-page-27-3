@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +27,42 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} relative mx-auto w-full max-w-7xl bg-[#FCFAF9] px-4 antialiased sm:px-6 lg:px-8`}
       >
-        {children}
+        <picture>
+          <source
+            media="(min-width:1024PX )"
+            srcSet="/assets/bg-main-desktop.png"
+          />
+          <source
+            media="(min-width:768PX )"
+            srcSet="/assets/bg-main-tablet.png"
+          />
+          <Image
+            src="/assets/bg-main-mobile.png"
+            alt="logo"
+            width={582}
+            height={780}
+            className="absolute -top-17 right-0 bg-bottom bg-no-repeat md:-top-42 md:right-13 md:h-[1108px] md:w-[1282px] lg:-top-77 lg:h-[2058px] lg:w-[1913px]"
+          />
+        </picture>
+        <Image
+          src="/assets/bg-pattern-1.svg"
+          alt="logo"
+          width={312}
+          height={468}
+          className="absolute hidden bg-no-repeat sm:-top-10 sm:-right-10 sm:flex lg:right-2"
+        />
+        <header>
+          <Image
+            src="/assets/logo.svg"
+            alt="logo"
+            width={147}
+            height={33}
+            className="z-50 pt-8 sm:pt-16"
+          />
+        </header>
+        <div className="mx-auto">{children}</div>
       </body>
     </html>
   );

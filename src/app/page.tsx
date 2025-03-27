@@ -1,7 +1,11 @@
-import Image from "next/image";
+import PremiumEq from "@/components/premium-eq";
+import SoundExtraordinary from "@/components/sound-extraordinary";
 
 export default function Home() {
   return (
-    <main className="">Home Page</main>
+    <main className="">
+      <SoundExtraordinary />
+      <PremiumEq />
+    </main>
   );
 }
