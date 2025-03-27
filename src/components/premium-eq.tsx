@@ -4,13 +4,13 @@ import { Button } from "./ui/button";
 
 export default function PremiumEq() {
   return (
-    <section className="relative z-50 -mx-4 h-[37.5rem] bg-[#191826] px-12 sm:mx-0 sm:w-[47.5rem] sm:rounded-xl sm:px-16 lg:w-[76.375rem] lg:px-24">
+    <section className="relative z-50 -mx-4 h-[37.5rem] bg-[#191826] px-12 sm:mx-0 sm:rounded-xl sm:px-16 lg:px-24">
       <Image
         src="/assets/illustration-app.png"
         alt="illustration-app"
         width={209}
         height={430}
-        className="absolute -top-27 right-0 left-0 z-40 mx-auto sm:-top-35 sm:-left-84 sm:h-[556px] sm:w-[271px] lg:-top-53 lg:-left-186 lg:h-[642px] lg:w-[312px]"
+        className="absolute -top-27 right-0 left-0 z-40 mx-auto sm:-top-35 sm:-left-84 sm:h-[556px] sm:w-[271px] lg:-top-53 lg:-left-163 lg:h-[642px] lg:w-[312px]"
       />
       <Image
         src="/assets/bg-pattern-2.svg"
@@ -19,7 +19,7 @@ export default function PremiumEq() {
         height={468}
         className="absolute top-0 left-12 z-30 sm:right-0 sm:left-0 sm:mx-auto lg:-left-70"
       />
-      <div className="absolute right-0 -bottom-94 z-50 h-[34.125rem] w-full space-y-9 bg-[#FA7453] px-9 py-12 text-[#FCFAF9] sm:right-26 sm:-bottom-25 sm:w-[24.9375rem] sm:rounded-xl sm:px-12 lg:right-56 lg:-bottom-33 lg:h-[35.0625rem] lg:w-[27.875rem]">
+      <div className="absolute right-0 -bottom-94 z-50 h-[34.125rem] w-full space-y-9 bg-[#FA7453] px-9 py-12 text-[#FCFAF9] sm:right-26 sm:-bottom-25 sm:w-[24.9375rem] sm:rounded-xl sm:px-12 lg:right-37 lg:-bottom-33 lg:h-[35.0625rem] lg:w-[27.875rem]">
         <div className="space-y-3">
           <h2 className="text-[2rem] leading-9 font-bold sm:leading-10">
             Premium EQ
