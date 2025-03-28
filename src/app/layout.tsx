@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import Image from "next/image";
 
 import Footer from "@/components/footer";
 
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const IBMPlexSans = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} relative mx-auto w-full max-w-7xl bg-[#FCFAF9] px-4 antialiased sm:px-6 lg:px-8`}
+        className={`${IBMPlexSans.variable} relative mx-auto w-full max-w-7xl bg-[#FCFAF9] px-4 antialiased sm:px-6 lg:px-8`}
       >
         <picture>
           <source
